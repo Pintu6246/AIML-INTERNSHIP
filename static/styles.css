@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #000000; /* Adjusted for better visibility on background image */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    transform: translateY(-50%);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000bd;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background for better readability */
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 42.5%;
+    right: 300px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00796b00;
+    border: 2px solid #000000;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    position: absolute;
+    top: 57%;
+}
+
+a:hover {
+    background-color: #00c6a530;
+}
+
+input[type="number"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #1e2528;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #e0f2f100;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #00796b;
+    background-color: #ffffff1e;
+}
+
+button {
+    width: calc(100% - 22px);
+    padding: 12px;
+    background-color: #00796b00;
+    border: 2px solid #0d3445;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff81;
+}

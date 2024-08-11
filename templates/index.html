@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Classification</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <h1>Drug Classification</h1>
+    <form action="http://localhost:5000/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="10" max="80" required><br>
+        <label for="sex">Sex (1 = M, 0 = F):</label>
+        <input type="number" id="sex" name="sex" min="0" max="1" required><br>
+        <label for="bp">BP (2 = Low, 1 = Normal, 0 = High):</label>
+        <input type="number" id="bp" name="bp" min="0" max="2" required><br>
+        <label for="cholesterol">Cholesterol (1 = High, 0 = Normal):</label>
+        <input type="number" id="cholesterol" name="cholesterol" min="0" max="1" required><br>
+        <label for="na_to_k">Na to K Ratio:</label>
+        <input type="number" id="na_to_k" name="na_to_k" step="any" min="0.0" max="40.0" required><br>
+        <label for="model">Model:</label>
+        <select id="model" name="model">
+            <option value="rfc">Random Forest</option>
+            <option value="dtc">Decision Tree</option>
+        </select><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+<!-- <script>
+    (function() {
+    var win = $(window);
+    var $bg = $("#bg");
+    var available = [1024, 1280, 1366, 1400, 1680, 1920, 2560, 3840, 4860];
+
+    win.resize(function() {
+        var win_w = win.width();
+        var chosen = available[available.length - 1];
+
+        for (var i = 0; i < available.length; i++) {
+            if (available[i] >= win_w) {
+                chosen = available[i];
+                break;
+            }
+        }
+
+        $bg.attr('src', '/img/bg/' + chosen + '.jpg');
+    }).resize();
+})();
+</script> -->
+</html>
